@@ -1,20 +1,18 @@
-window.onload = function(){
+window.onload = function() {
 
-setTimeout(function(){
+setTimeout(function() {
 
-document.getElementById("inicio").style.display="none";
+document.getElementById("inicio").style.display = "none";
+document.getElementById("chat").style.display = "block";
 
-document.getElementById("chat").style.display="block";
-
-},3000);
+}, 3000);
 
 }
 
 function responder(){
 
-let texto=document.getElementById("input").value;
-let respuesta=document.getElementById("respuesta");
-
-respuesta.innerText="Pulga IA recibió: " + texto;
+let texto = document.getElementById("input").value;
+document.getElementById("respuesta").innerText =
+"Pulga IA recibió: " + texto;
 
 }
