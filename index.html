@@ -6,10 +6,18 @@
 </head>
 <body>
 
-<h1>Mi IA en Safari 🤖</h1>
+<h1>pulga gpt 🤖📸</h1>
 
 <input id="input" placeholder="Escribe algo..." />
 <button onclick="responder()">Enviar</button>
+
+<br><br>
+
+<input type="file" accept="image/*" onchange="cargarImagen(event)">
+
+<br><br>
+
+<img id="preview" style="max-width:200px; display:none;" />
 
 <p id="respuesta"></p>
 
