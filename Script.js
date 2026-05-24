@@ -1,21 +1,17 @@
+setTimeout(function(){
+
+document.getElementById("inicio").style.display="none";
+
+document.getElementById("chat").style.display="block";
+
+},3000);
+
+
 function responder(){
-let texto = document.getElementById("input").value;
-let respuesta = document.getElementById("respuesta");
 
-if(texto.toLowerCase().includes("hola")){
-respuesta.innerText = "Hola 👋 ya puedes subir imágenes también";
-}
-else{
-respuesta.innerText = "Recibí tu mensaje 👍";
-}
-}
+let texto=document.getElementById("input").value;
+let respuesta=document.getElementById("respuesta");
 
-// Mostrar imagen
-function cargarImagen(event){
-let img = document.getElementById("preview");
-img.src = URL.createObjectURL(event.target.files[0]);
-img.style.display = "block";
+respuesta.innerText="Pulga IA recibió: "+texto;
 
-document.getElementById("respuesta").innerText =
-"Imagen cargada 📸 (la IA aún no la analiza)";
 }
